@@ -1,0 +1,2 @@
+include ':gradle-fdroid-plugin'
+include ':sample'

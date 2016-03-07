@@ -1,0 +1,2 @@
+include ':fdroid-plugin'
+project(':fdroid-plugin').projectDir = new File('../gradle-fdroid-plugin')

@@ -1,0 +1,21 @@
+apply plugin: 'groovy'
+apply plugin: 'com.novoda.bintray-release'
+
+dependencies {
+    compile gradleApi()
+}
+
+group = 'org.openintents'
+
+ext {
+    artifactId = 'gradle-fdroid-plugin'
+}
+
+publish {
+    userOrg = 'openintents'
+    groupId = project.group
+    artifactId = project.ext.artifactId
+    version = project.version
+    description = 'Useful tasks for fdroid releases'
+    website = 'https://github.com/openintents/gradle-fdroid-plugin'
+}

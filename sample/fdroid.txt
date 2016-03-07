@@ -1,0 +1,27 @@
+Categories:Demo
+License:Apache2
+Author Name:OpenIntents
+Author Email:support@openintents.org
+Source Code:https://github.com/openintents/gradle-fdroid-plugin
+Issue Tracker:https://github.com/openintents/gradle-fdroid-plugin/issues
+Donate:http://openintents.org/contribute
+Bitcoin:16MJeiftw9LRuvqoSH18v16kYTeNx7wJSZ
+
+Name:Demo Fdroid Plugin
+Auto Name:GradleFdroidPlugin
+Summary:Use fdroid in gradle
+Description:
+This app is used to demonstrate the use of the gradle fdroid plugin.
+.
+
+Repo Type:git
+Repo:https://github.com/openintents/gradle-fdroid-plugin
+
+Build:1.0.0,1
+    commit=1.0.0
+    subdir=sample
+
+Auto Update Mode:Version +-fdroid v%v
+Update Check Mode:Tags
+Current Version:1.0.0
+Current Version Code:1

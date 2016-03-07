@@ -17,11 +17,12 @@ public class FDroidPlugin implements Plugin<Project> {
     }
 
     private static String getFDroidPath(project) {
-        def fdroidPath
-        if (project.hasProperty('fdroid.dir')) {
-            fdroidPath = "${project.fdroid}"
-        } else {
-            throw new IllegalStateException("fdroid could not be found in project '${project.name}' ${project.ext.fdroid}. Please add property 'fdroid' with value of the path to fdroid")
+
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+	def fdroidPath = properties.getProperty('fdroid.dir')
+        if (!fdroidPath) {
+            throw new IllegalStateException("fdroid could not be found in local.properties. Please add property 'fdroid.dir' with value of the path to fdroid")
         }
         fdroidPath
     }

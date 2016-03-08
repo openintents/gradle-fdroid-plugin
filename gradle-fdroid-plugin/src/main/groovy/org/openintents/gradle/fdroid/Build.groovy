@@ -8,7 +8,7 @@ class Build extends FDroidTask {
     void exec() {
         def arguments = ['build']
 
-        arguments += ['-v -l', packageId]
+        arguments += ['-v', '-l', packageId]
 
         runCommand(arguments)
     }

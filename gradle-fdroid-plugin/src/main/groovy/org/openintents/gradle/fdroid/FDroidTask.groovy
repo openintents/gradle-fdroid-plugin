@@ -1,10 +1,19 @@
 package org.openintents.gradle.fdroid
 
+import groovy.transform.Memoized
 import org.gradle.api.DefaultTask
 
 public class FDroidTask extends DefaultTask {
 
-    protected pluginEx = project.extensions.findByType(FDroidPluginExtension)
+    protected pluginEx = project.extensions.findByType(FdroidPluginExtension)
+
+    def packageId
+
+    @Memoized
+    def getPackageId() {
+        packageId ?: pluginEx.packageId
+    }
+
 
     protected handleCommandOutput(def text)  {
         logger.info text

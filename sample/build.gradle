@@ -6,5 +6,7 @@ apply plugin: 'org.openintents.fdroid'
 android {
     compileSdkVersion 23
     buildToolsVersion '23.0.2'
-    applicationId = "org.openintents.gradle.fdroid"
+    defaultConfig {
+        applicationId "org.openintents.gradle.fdroid.sample"
+    }
 }

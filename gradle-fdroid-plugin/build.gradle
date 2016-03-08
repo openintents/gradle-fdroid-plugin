@@ -1,8 +1,13 @@
 apply plugin: 'groovy'
 apply plugin: 'com.novoda.bintray-release'
 
+repositories {
+    jcenter()
+}
+
 dependencies {
     compile gradleApi()
+    compile 'com.android.tools.build:gradle:1.5.0'
 }
 
 group = 'org.openintents'

@@ -10,7 +10,7 @@ class FDroidCommand {
     }
 
     private command() {
-        fdroid + parameters
+        [fdroid] + parameters
     }
 
     String toString() {

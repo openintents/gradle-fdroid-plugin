@@ -6,6 +6,9 @@ buildscript {
         classpath 'com.novoda:bintray-release:0.3.4'
     }
 }
+repositories {
+    jcenter()
+}
 
 rootProject.dependencies {
     compile project(':fdroid-plugin')

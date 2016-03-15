@@ -17,6 +17,7 @@ public class FdroidPlugin implements Plugin<Project> {
             task 'fdroidBuild', type: BuildTask, group: 'publishing', description: 'builds the apk using fdroid'
             task 'fdroidLint', type: LintTask, group: 'verification', description: 'checks for lint errors of the meta data using fdroid'
             task 'fdroidRewriteMeta', type: RewriteMetaTask, group: 'help', description: 'rewrites the meta data using fdroid'
+            task 'bootstrapTripleT', type: BootstrapTripleTTask, group: 'publishing', description: 'imports meta data from Google play meta data files (TripleT format)'
         }
     }
 

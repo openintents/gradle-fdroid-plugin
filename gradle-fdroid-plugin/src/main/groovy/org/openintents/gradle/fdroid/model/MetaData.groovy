@@ -1,0 +1,39 @@
+package org.openintents.gradle.fdroid.model
+
+class MetaData {
+    def categories
+    def authorName
+    def authorEmail
+    def license
+    def autoName
+    def name
+    def provides
+    def webSite
+    def sourceCode
+    def issueTracker
+    def changelog
+    def donate
+    def flattrID
+    def bitcoin
+    def litecoin
+    def summary
+    def description
+    def maintainerNotes
+    def repoType
+    def repo
+    def binaries
+    def build
+    def antiFeatures
+    def disabled
+    def requiresRoot
+    def archivePolicy
+    def updateCheckMode
+    def updateCheckIgnore
+    def vercodeOperation
+    def updateCheckName
+    def updateCheckData
+    def autoUpdateMode
+    def currentVersion
+    def currentVersionCode
+    def noSourceSince
+}

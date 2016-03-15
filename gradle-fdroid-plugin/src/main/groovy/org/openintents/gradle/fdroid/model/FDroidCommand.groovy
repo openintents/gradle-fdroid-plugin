@@ -1,4 +1,4 @@
-package org.openintents.gradle.fdroid
+package org.openintents.gradle.fdroid.model
 
 class FDroidCommand {
 

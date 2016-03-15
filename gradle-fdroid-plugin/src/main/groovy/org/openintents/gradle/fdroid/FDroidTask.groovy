@@ -2,6 +2,7 @@ package org.openintents.gradle.fdroid
 
 import groovy.transform.Memoized
 import org.gradle.api.DefaultTask
+import org.openintents.gradle.fdroid.model.FDroidCommand
 
 public class FDroidTask extends DefaultTask {
 

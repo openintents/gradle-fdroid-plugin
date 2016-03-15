@@ -1,5 +1,6 @@
 apply plugin: 'groovy'
 apply plugin: 'com.novoda.bintray-release'
+apply plugin: "com.gradle.plugin-publish"
 
 repositories {
     jcenter()
@@ -7,6 +8,7 @@ repositories {
 
 dependencies {
     compile gradleApi()
+    compile localGroovy()
     compile 'com.android.tools.build:gradle:1.5.0'
 }
 
@@ -21,6 +23,26 @@ publish {
     groupId = project.group
     artifactId = project.ext.artifactId
     version = project.version
-    description = 'Useful tasks for fdroid releases'
+    description = 'Publish your Android app on F-Droid repositories'
     website = 'https://github.com/openintents/gradle-fdroid-plugin'
+}
+
+pluginBundle {
+    website = 'http://www.openintents.org/'
+    vcsUrl = 'https://github.com/openintents/gradle-fdroid-plugin'
+    description = 'Publish your Android app on F-Droid repositories'
+    tags = ['fdroid', 'android', 'release', 'publish']
+
+    plugins {
+        greetingsPlugin {
+            id = 'org.openintents.fdroid'
+            displayName = 'Gradle F-Droid plugin'
+        }
+    }
+
+    mavenCoordinates {
+        groupId = project.group
+        artifactId = project.ext.artifactId
+        version = project.version
+    }
 }

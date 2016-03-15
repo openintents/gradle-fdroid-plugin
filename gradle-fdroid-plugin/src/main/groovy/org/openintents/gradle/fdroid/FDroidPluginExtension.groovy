@@ -8,6 +8,9 @@ public class FdroidPluginExtension {
     String fdroidPath
     def fdroid
     def packageId
+    def vcsUrl
+    def vcsRemoteName
+    def vcsSubDirectory
 
     private final Project project
 

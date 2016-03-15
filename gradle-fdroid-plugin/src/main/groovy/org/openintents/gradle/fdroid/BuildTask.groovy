@@ -2,13 +2,13 @@ package org.openintents.gradle.fdroid
 
 import org.gradle.api.tasks.TaskAction
 
-class RewriteMeta extends FDroidTask {
+class BuildTask extends FDroidTask {
 
     @TaskAction
     void exec() {
-        def arguments = ['rewriteMeta']
+        def arguments = ['build']
 
-        arguments += [packageId]
+        arguments += ['-v', '-l', packageId]
 
         runCommand(arguments)
     }

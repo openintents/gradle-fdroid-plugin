@@ -10,3 +10,7 @@ android {
         applicationId "org.openintents.gradle.fdroid.sample"
     }
 }
+
+fdroid {
+    vcsUrl = "https://github.com/openintents/shopping"
+}
